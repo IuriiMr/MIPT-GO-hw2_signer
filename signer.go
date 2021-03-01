@@ -32,7 +32,7 @@ func SingleHash(in, out chan interface{}) {
 	wg := &sync.WaitGroup{}
 
 	for i := range in {
-		time.Sleep(time.Millisecond * 30)
+		time.Sleep(time.Millisecond * 11)
 		data := i.(int)
 		wg.Add(1)
 
